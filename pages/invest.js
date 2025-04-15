@@ -62,8 +62,8 @@ export default function researchrequest(props) {
               <div class="col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
               <div class="title_sections_inner" id="partner1">
                                 {/* <h2>{t.partner1}</h2> */}
-                                <h1> إبدا رحلتك 
-                                </h1>
+                                <h2>🚀 ابدأ رحلتك  
+                                </h2>
                             </div>
                
               
