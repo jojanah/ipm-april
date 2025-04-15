@@ -35,8 +35,9 @@ const ImageSlider = ({ imagesForImageSlider }) => {
                             key={index}
                             className="each-slide-effect">
 
+                          
                             <img
-                                src={`https://ipm-app.onrender.com/download/images/${img}`}
+                                src='../../assets/img/subheader.png'
                                 width='100%' ></img>
 
                         </div>
