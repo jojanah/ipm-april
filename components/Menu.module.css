@@ -1,0 +1,100 @@
+
+.circularMenuIcon {
+  background:  rgba(255, 255, 255, .7);
+  border: 2px solid #009ec2;
+  border-radius: 100%;
+  font-size: 30px;
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+  position: absolute;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 0.2s;
+  cursor: pointer;
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 2;
+}
+.circularMenuButton {
+  display: none; /* Hide the checkbox input */
+}
+.circularMenuItem {
+  display: none; /* Hide items by default */
+  opacity: 0;    /* Ensure they're invisible initially */
+  visibility: hidden; /* Make them not interactable */
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  width: 120px; /* Box width */
+  height: 40px; /* Box height */
+  line-height: 40px; /* Center text vertically */
+  background: rgba(0, 158, 194, 0.7); /* Light blue background */
+  border: 2px solid #009ec2; /* Same color border */
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px; /* Optional: rounded corners */
+  margin-top: 150px;
+}
+
+/* When the checkbox is checked, show the items */
+.circularMenuButton:checked ~ .circularMenuItem {
+  display: block;  /* Show icons */
+  opacity: 1;      /* Fade-in effect */
+  visibility: visible; /* Make them interactable */
+}
+
+/* Position the menu items vertically below the button */
+.circularMenuButton:checked ~ .circularMenuItem:nth-of-type(1) {
+  transform: translate3d(0, 60px, 0); /* First box below */
+}
+
+.circularMenuButton:checked ~ .circularMenuItem:nth-of-type(2) {
+  transform: translate3d(0, 120px, 0); /* Second box below the first */
+}
+
+.circularMenuButton:checked ~ .circularMenuItem:nth-of-type(3) {
+  transform: translate3d(0, 180px, 0); /* Third box below */
+}
+
+.circularMenuButton:checked ~ .circularMenuItem:nth-of-type(4) {
+  transform: translate3d(0, 240px, 0); /* Fourth box below */
+}
+
+.circularMenuButton:checked ~ .circularMenuItem:nth-of-type(5) {
+  transform: translate3d(0, 300px, 0); /* Fifth box below */
+}
+
+
+
+
+/* Hover effect */
+.circularMenuIcon:hover,
+.circularMenuButton:checked + .circularMenuIcon,
+.circularMenuIcon:focus {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.circularMenuItem {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  height: 50px;
+  position: absolute;
+  text-align: right;
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 0.2s;
+  width: 250px;
+  font-size: 20px;
+  padding-right:10px
+
+}
+
+
+
+.circularMenuItem:hover {
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+}
+

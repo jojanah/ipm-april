@@ -1,3 +1,4 @@
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -39,4 +40,575 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.each-slide-effect>div {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  background-size:
+    cover;
+
+  background-repeat:
+    no-repeat;
+
+  height:
+    600px;
+
+}
+
+
+
+.each-slide-effect span {
+
+  padding:
+    20px;
+
+  font-size:
+    20px;
+
+  background:
+    #efefef;
+
+  text-align:
+    center;
+
+  bottom:
+    0;
+
+  position:
+    absolute;
+
+}
+
+
+
+.each-slide-effect img {
+
+  height:
+    auto;
+
+}
+
+
+
+.indicators {
+
+  position:
+    absolute;
+
+  margin-top:
+    -20px !important;
+
+  padding-bottom:
+    10px;
+
+  transform:
+    scale(3);
+
+  left:
+    50%;
+
+  transform:
+    translate(-50%,
+      -50%),
+    scale(3);
+
+}
+
+
+
+.each-slideshow-indicator::before {
+
+  background-color: #8b2477 !important;
+
+  border:
+    1px solid white !important;
+
+
+
+  background: #8b2477 !important;
+
+  background-clip:
+    content-box !important;
+
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  /* Left, Center, Right */
+  grid-gap: 20px;
+  /* Adds space between the grid columns */
+  align-items: center;
+  /* Vertically align the items */
+  padding: 10px 20px;
+
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-left a,
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#myNavbar.scrolled {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+#myNavbar.scrolled .navbar-nav .nav-link {
+  color: #8b2477;
+  transition: color 0.3s ease;
+  /* font-weight: bold; */
+}
+
+#myNavbar.scrolled .navbar-brand img {
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    /* Stack everything on mobile */
+    grid-template-rows: auto auto auto;
+    /* Ensure rows stack */
+    justify-items: center;
+    grid-gap: 10px;
+    /* Adjust spacing for mobile */
+  }
+
+  .navbar-left,
+  .navbar-right {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-center {
+    justify-content: center;
+  }
+}
+
+/* Container for the grid of flip cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Two cards per row */
+  gap: 1px;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+/* Individual flip card */
+.flip-card {
+  background-color: transparent;
+  width: 249px;
+  height: 340px;
+  perspective: 1000px;
+  /* Creates 3D effect */
+}
+
+/* The actual flip card */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  /* Ensures 3D child elements */
+  transition: transform 0.6s;
+  /* Flip transition effect */
+}
+
+/* Flip effect when hovering over the card */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  /* Rotates the card on Y-axis */
+}
+
+/* The front side of the flip card */
+.flip-card-front,
+/* The back side of the flip card */
+.flip-card-back {
+  position: absolute;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* Hides back when flipped */
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  /* Card width */
+  height: 200px;
+  /* Card height */
+  perspective: 1000px;
+  /* 3D effect */
+  margin: 10px;
+  /* Add spacing between cards */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* Hide the back face when not flipped */
+}
+
+.flip-card-front {
+  background-size: cover;
+  /* Ensure the image covers the card */
+  background-position: center;
+  /* Center the image */
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transform: rotateY(180deg);
+  /* Rotate back side */
+}
+
+
+.banner_title {
+  background-color: #851f83;
+  color: white;
+  text-align: center;
+  width: 50%;
+  height: 65px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_title_ipm {
+  background-color: #851f83;
+  color: white;
+  text-align: center;
+  width: 70%;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twitter-section {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  /* Light gray background for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.tweet-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  max-width: 1200px;
+  width: 100%;
+
+}
+
+.tweet-card {
+  border: 1px solid #ddd;
+  /* Add a light border */
+  border-radius: 10px;
+  /* Rounded corners for better appearance */
+  background-color: #fff;
+  /* White background for tweets */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  overflow: hidden;
+  /* Ensure content stays within card */
+  height: 400px;
+  /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tweet-card:hover {
+  transform: translateY(-5px);
+  /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* Enhance shadow on hover */
+}
+
+.tweet-card .content {
+  padding: 10px;
+  overflow: auto;
+  /* Scrollable content for long tweets */
+}
+
+.tweet-card .footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #666;
+}
+
+a:focus {
+  outline: none;
+  /* Remove outline when focused */
+  border: none;
+  /* Remove any border around the link */
+  box-shadow: none;
+  /* Remove any box-shadow that may be applied */
+}
+
+/* Base styles for positioning the location */
+.location {
+  position: absolute;
+  width: 40px;
+  /* Base size for the image */
+  height: 40px;
+  background-image: url('/assets/img/location.png');
+  background-size: contain;
+  /* Make sure the image is contained within the location */
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  /* Center the image */
+  animation: pulse 0.8s infinite;
+  text-decoration: none;
+  /* Remove underline from the anchor */
+  outline: none;
+  /* Remove outline */
+  border: none;
+  /* Remove border */
+  box-shadow: none;
+  /* Remove box-shadow */
+}
+
+/* Add content using the :before pseudo-element */
+.location:before {
+  content: "";
+  /* Unicode character */
+  font-family: "FontAwesome";
+  /* Specify a font family (e.g., Font Awesome, if using icons) */
+  font-size: 20px;
+  /* Adjust size as needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Remove outline and box-shadow when the .location element is focused */
+.location:focus,
+.location:focus-visible {
+  outline: none;
+  /* Remove outline on focus */
+  box-shadow: none;
+  /* Remove focus ring shadow */
+}
+
+/* Tooltip styles */
+.tooltip {
+  display: none;
+  /* Initially hidden */
+  position: absolute;
+  top: -40px !important;
+  bottom: 50px;
+  /* Position above the location */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 158, 194) !important;
+  color: white;
+  /* White text color */
+  padding: 1px !important;
+  border-radius: 15px !important;
+  font-size: 15px !important;
+  white-space: nowrap;
+  z-index: 2;
+  /* Ensure the tooltip is above the location */
+  opacity: 0;
+  /* Start with hidden tooltip */
+  transition: opacity 0.3s ease;
+  /* Fade-in effect */
+  width: 150px;
+  height: 30px;
+  text-align: center;
+}
+
+/* Show the tooltip on hover */
+.location:hover .tooltip {
+  display: block;
+  /* Make the tooltip visible */
+  opacity: 1;
+  /* Fade in */
+}
+
+@media (max-width: 480px) {
+  .location {
+    width: 25px;
+    /* Further reduce size for mobile devices */
+    height: 25px;
+  }
+}
+
+/* Ensure the map takes full width on mobile */
+@media (max-width: 768px) {
+  .location {
+    top: 60%;
+    /* Adjust the top position on smaller screens */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Keep the marker centered horizontally */
+  }
+
+  img {
+    width: 100%;
+    /* Ensure map image takes full width */
+    height: auto;
+  }
+}
+
+/* Ensure the navbar expands below content */
+.navbar-collapse {
+  position: relative;
+  z-index: 1;
+  /* Ensure it stays above the content but below the header */
+}
+
+/* Handle the navbar-toggler when collapsed on mobile */
+.navbar-toggler {
+  border: none;
+  /* Optional: Remove border on the button */
+}
+
+@media (max-width: 991px) {
+
+  /* Ensure the navbar menu doesn't overlap with the content */
+  .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    /* Make sure background color doesn't blend with page */
+    z-index: 10;
+    /* Ensure navbar appears on top but not over content */
+  }
+}
+.btn-social {
+  color: #ddd;
+}
+
+.navbar-nav .dropdown-menu {
+  display: none;
+  visibility: hidden;
+  position: absolute; /* إزالة الوضع الثابت */
+  background-color: white !important; /* خلفية بيضاء تقليدية */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل بسيط */
+  transition: none; /* إزالة التأثيرات الانتقالية */
+  width: auto; /* حجم القائمة بناءً على المحتوى */
+  padding: 10px 0; /* إضافة تباعد عمودي */
+  border-radius: 4px; /* زوايا مستديرة بسيطة */
+  z-index: 1000; /* ترتيب الطبقات القياسي */
+}
+
+.navbar-nav .dropdown:hover > .dropdown-menu,
+.navbar-nav .dropdown:focus > .dropdown-menu {
+  display: block !important; /* عرض القائمة عند التمرير أو التركيز */
+  visibility: visible !important;
+  opacity: 1 !important;
+  right: auto !important;
+  top: auto !important;
+  position: absolute !important; /* الوضع الافتراضي */
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px 15px; /* حجم padding القياسي */
+  font-size: 16px; /* حجم خط معتدل */
+  color: #333; /* لون النص */
+  text-align: left; /* محاذاة النص إلى اليسار */
+  background-color: transparent; /* خلفية شفافة */
+  text-align: right;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #fff !important; /* لون النص عند التمرير */
+  background-color: #fcb816   !important; /* خلفية زرقاء عند التمرير */
+}
+
+
+
+/* Left-bottom image shape */
+.section__news {
+  background-image:  url("../public/assets/img/workspace/shape.svg") !important; /* Path to your image */
+  background-size: cover; /* Ensures the image fits within the shape */
+  background-repeat: no-repeat; 
+  background-position: left bottom; /* Aligns the image to the bottom left */
+  z-index: -1; /* Keeps it behind the content */
+}
+.breadcrumbs a {
+color: #ddd;
+text-decoration: none;
+}
+.breadcrumbs a:not(:last-child):after {
+  content: ">";
+  display: inline-block;
+  padding: 0 14px;
 }

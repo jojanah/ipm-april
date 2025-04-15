@@ -9,8 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "next": "15.0.3"
+    "@shadcn/ui": "^0.0.4",
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "i18next": "^24.2.1",
+    "image-validator": "^1.2.1",
+    "jquery": "^3.7.1",
+    "next": "^15.1.1",
+    "next-i18next": "^15.4.1",
+    "notiflix": "^3.2.7",
+    "popper.js": "^1.16.1",
+    "postcss": "^8.5.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.0",
+    "react-slick": "^0.30.3",
+    "react-slideshow-image": "^4.3.2",
+    "react-spinners": "^0.15.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^10.0.0",
+    "tailwindcss": "^4.0.6",
+    "validator": "^13.12.0"
   }
 }

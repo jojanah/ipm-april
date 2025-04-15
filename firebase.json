@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": "out",
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nextjsSSR"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions"
+  }
+}
