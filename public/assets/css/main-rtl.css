@@ -15728,6 +15728,18 @@ width: 150px; */
 .category_films .item:hover .content p {
   color: rgba(0, 0, 0, 0.7);
 }
+.category_invest .item:hover {
+  background-color: #ffffff;
+}
+.category_invest .item:hover  .content h3{
+  color: #001638;
+}
+.category_invest .item:hover  .content p{
+  color: #001638;
+}
+.category_invest .item:hover  .tio{
+  color: #001638;
+}
 
 /*-----------------------------
   download_app_ho
