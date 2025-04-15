@@ -477,8 +477,8 @@ export default function Home(props) {
 
 export async function getServerSideProps(context) {
   // Fetch data from an external API or internal API
-  // const res = await fetch('https://ipm-firstdarft.vercel.app/ipm/');
-   const res = await fetch('http://localhost:1200/ipm/');
+  const res = await fetch('https://ipm-firstdarft.vercel.app/ipm/');
+   // const res = await fetch('http://localhost:1200/ipm/');
   const data = await res.json();
   console.log("🚀 ~ getServerSideProps ~ data:", data)
 
