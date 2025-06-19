@@ -48,7 +48,7 @@ export default function researchrequest(props) {
                                     <a href="/" class="">{t.home}  </a>
                                     <a href="/#invest">{t.invest}  </a>
                                     <a href="/#invest">{t.researchinvest}  </a>
-                                    <a href="" style={{ color: '#fcb816' }}>{t.research_request_land_benefit}  </a>
+                                    <a href="" ={style{ color: '#fcb816' }}>{t.research_request_land_benefit}  </a>
                                 </div>
 
                             </div>

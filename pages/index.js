@@ -212,7 +212,7 @@ export default function Home(props) {
                   </h1>
                 </div>
               </div>
-              
+  
      {/* Buttons Container */}
      <div 
           style={{
@@ -223,44 +223,22 @@ export default function Home(props) {
             flexWrap: 'wrap'
           }}
         >
-           {/* <a
-            href="#"
-            className="btn btn_md_primary rounded-20 c-white"
-            style={{
-              backgroundColor: '#68ad45',
-              padding: '10px 20px',
-              textAlign: 'center',
-            }}>
-            المرسوم السلطاني
-          </a> */}
-              <a
-            href="#"
-            className="btn btn_md_primary rounded-20 c-white"
-            style={{
-              backgroundColor: '#fdb913',
-              padding: '10px 20px',
-              textAlign: 'center',
-            }}>
-    لماذا مجمع الابتكار مسقط؟
-          </a>
-
-    
-
-      
-
-         
+                       <p className="c-gray" style={{ fontSize: '25px' }}>
+                تبلغ مساحة مجمع الابتكار مسقط 540 الف متر مربع، يعد مجمع الابتكار مسقط وجة مثالية لاستثمار بفضل موقعه المميز في وجاذبيته الاقتصادية بالاضافة الى الحوافز والتسهيلات التي يقدمها المجمع 
+</p>
+       
           <a
-            href="/research_request_close_area"
-            className="btn btn_md_primary rounded-20 c-white"
+            href="/investtour"
+            className="btn btn_md_primary rounded-20 c-white f-bold"
             style={{
-              backgroundColor: '#68ad45',
+              backgroundColor: 'gray',
               padding: '10px 20px',
               textAlign: 'center',
             }}>
-              التسهيلات والحوافز
-         {/* {t.researchinvest}  / {t.research_request_close_area} */}
+              ابدأ رحلة الاستثمار
+
           </a>
-          <a
+        {/*     <a
             href="#"
             className="btn btn_md_primary rounded-20 c-white"
             style={{
@@ -268,6 +246,16 @@ export default function Home(props) {
               padding: '10px 20px',
               textAlign: 'center',
             }}>الفرص الاستثمارية 
+          </a>
+          <a
+            href="/whyIPM"
+            className="btn btn_md_primary rounded-20 c-white"
+            style={{
+              backgroundColor: '#fdb913',
+              padding: '10px 20px',
+              textAlign: 'center',
+            }}>
+    لماذا مجمع الابتكار مسقط؟
           </a>
           <a
             href="/invest"
@@ -278,10 +266,10 @@ export default function Home(props) {
               textAlign: 'center',
             }}>
              {t.investtour}
-         {/* {t.researchinvest}  / {t.research_request_land_benefit} */}
            
-          </a>
-        </div>
+          </a>*/}
+        </div> 
+
       </div>
 
             {/* Second column for the image */}

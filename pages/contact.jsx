@@ -70,17 +70,15 @@ export default function researchrequest(props) {
                         <div class="col-md-8 col-lg-6">
                             <div class="banner_title_inner">
                                 <h1>
-                                    {t.researchinvest}
+                                    {t.contactus}
                                 </h1>
                                 {/* <p>
                     Leave us a little info, and we’ll be in touch.
                   </p> */}
                                 <div class="breadcrumbs">
                                     <a href="/" class="">{t.home}  </a>
-                                    <a href="/#invest">{t.invest}  </a>
-                                    <a href="/invest">{t.investtour}  </a>
                                     {/* <a href="" style={{ color: '#fcb816' }}>{t.research_request_close_area}  </a> */}
-                                    <a href="" style={{ color: '#fcb816' }}>مساحة مغلقة / الانتفاع بأرض  </a>
+                                    <a href="" style={{ color: '#fcb816' }}>{t.contactus}</a> 
                                 </div>
 
                             </div>
@@ -94,29 +92,15 @@ export default function researchrequest(props) {
                     <div class="row justify-content-center">
                         <div class="col-lg-6">
                             <div class="title_sections_inner margin-b-6">
-                                <h2>{t.rules}</h2>
-                                <ul>
-                                    <li>{t.rule1}</li>
-                                    <li>{t.rule2}</li>
-</ul>
+                                <h2>{t.contactus}</h2>
+     
                             </div>
                             <div class="form_cc_four">
                                 <form action="" class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <h6>اسم المشروع</h6>
-                                            <input type="text" class="form-control" onChange={(e) => { setName(e.target.value) }} />
-                                        </div>
-                                    </div>
+                                   
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <h6>اسم الشركة</h6>
-                                            <input type="text" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <h6>اسم صاحب الشركة</h6>
+                                            <h6>الاسم  </h6>
                                             <input type="text" class="form-control" />
                                         </div>
                                     </div>
@@ -132,9 +116,9 @@ export default function researchrequest(props) {
                                             <input type="text" class="form-control" />
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <div class="form-group">
-                                            <h6>الموقع الالكتروني ان وجد </h6>
+                                            <h6>  نوع الطلب  </h6>
                                             <input type="text" class="form-control" />
                                         </div>
                                     </div>
@@ -142,65 +126,20 @@ export default function researchrequest(props) {
                             
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <h6>نبذة عن الشركة</h6>
-                                            <textarea class="form-control" rows="7"  placeholder="(وصف موجز عن الشركة، تاريخ تأسيسها، رؤيتها وأهدافها)"></textarea>
+                                            <h6> العنوان </h6>
+                                            <input type="text" class="form-control" />
+
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <h6>الخبرات والأنشطة التجارية</h6>
-                                            <textarea class="form-control" rows="7" placeholder='(توضيح الأنشطة التجارية والخبرات السابقة، بما في ذلك الأبحاث والمشاريع التابعة للشركة)'></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <h6>حجم الاستثمارات والشراكات ان وجدت </h6>
-                                            <textarea class="form-control" rows="7" placeholder='(ذكر حجم الاستثمارات الحالية أو المقدرة في المشروع)'></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <h6>{t.whyipm}</h6>
+                                            <h6>الرسالة  </h6>
                                             <textarea class="form-control" rows="7"></textarea>
                                         </div>
                                     </div>
-                                    <div class="col-12 d-md-flex justify-content-between margin-t-2">
-                                        <div class="item_upload mb-3 mb-md-0">
-                                            <div class="upload__file">
-                                                <input type="file" />
-                                                <button type="button" class="btn btn_md_primary">
-                                                    <i class="tio attachment"></i>
-                                                  	نبذة عن المشروع باللغة العربية و الانجليزيه 
-                                                </button>
-                                            </div>
-                                            <div class="upload__file">
-                                                <input type="file" />
-                                                <button type="button" class="btn btn_md_primary">
-                                                    <i class="tio attachment"></i>
-                                                   السجل التجاري للشركة
-                                                </button>
-                                            </div>
-                                </div>
-                                    </div>
-                                    <div class="col-12 d-md-flex justify-content-between margin-t-2">
-                                    <div class="item_upload mb-3 mb-md-0">
-                                    <div class="upload__file">
-                                                <input type="file" />
-                                                <button type="button" class="btn btn_md_primary">
-                                                    <i class="tio attachment"></i>
-                                                    دراسة جدوى المشروع
-                                                </button>
-                                            </div>
-                                            <div class="upload__file">
-                                                <input type="file" />
-                                                <button type="button" class="btn btn_md_primary">
-                                                    <i class="tio attachment"></i>
-                                                   مستندات أخرى أو ملحقات داعمة
-                                                </button>
-                                            </div>
-                                            {/* <span class="my-auto">Maximum size: 12 MB</span> */}
-                                        </div>
-                                        </div>
+                                 
+                                 
+                               
                                 
                                     <div class="col-12 d-md-flex justify-content-between margin-t-2">
                                         <a onClick={handleSubmit} class="btn bg-ipm-green rounded-8 c-white h-fit-content">

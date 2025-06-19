@@ -7,26 +7,29 @@ import translations from '@/utils/translations';
 export default function researchrequest(props) {
     const { language, switchLanguage } = useLanguage();
     const t = translations[language];
-    const faqs = Array.from({ length: 21 }, (_, i) => {
-        if (i === 2 || i === 3 || i === 5 || i === 11) { // Just as an example for question 2 having sub-answers
-            return {
-                question: `q${i + 1}`,
-                answer: [
-                    // `ans${i + 1}`, // main answer
-                    `ans${i + 1}-a`, // sub-answer 1
-                    `ans${i + 1}-b`, // sub-answer 2
-                    `ans${i + 1}-c`, // sub-answer 2
-                    `ans${i + 1}-d`, // sub-answer 2
-                ],
-            };
-        } else {
-            return {
-                question: `q${i + 1}`,
-                answer: `ans${i + 1}`,
-            };
-        }
-    });
+    const teamMembers = [
+  {
+    name: "أراضي انتفاع ",
+    title: "لانشاء مراكز بحث وتطوير الشركات المحلية والعالمية العاملة",
+    img: "/assets/img/italy.jpg",
+    side: "left",
+  },
+  {
+    name: "مساحات مغلقة",
+    title: "يوفر المجمع مساحات مغلقة ومكاتب للمؤسسات الداعمه و القائمة على البحث و التطوير و الابتكار",
+    img: "/assets/img/front-view-off-office-desk.jpg",
+    side: "left",
+  },
+  {
+    name: "فرص استثمارية  تجارية",
+    title: "تتضمن: حضانة أطفال، مقاهي، مطاعم، صالة لياقة بدنية، مدرسة عالمية، مركز ترفيهي.",
+    img: "/assets/img/fun.jpg",
+    side: "left",
+  },
+
+];
     return (
+      
         <>
             {/* <ImageSlider imagesForImageSlider={imagesForImageSlider} /> */}
 
@@ -39,7 +42,8 @@ export default function researchrequest(props) {
                         <div class="col-md-8 col-lg-6">
                             <div class="banner_title_inner">
                                 <h1>
-                                    {t.invest}
+                                    الفرص الاستثمارية 
+
                                 </h1>
                                 {/* <p>
                     Leave us a little info, and we’ll be in touch.
@@ -47,7 +51,7 @@ export default function researchrequest(props) {
                                 <div class="breadcrumbs">
                                     <a href="/" class="">{t.home}  </a>
                                     <a href="/#invest" class="">{t.invest}  </a>
-                                    <a href="/invest" style={{ color: '#fcb816' }}>{t.investtour}  </a>
+                                    <a href="/invest" style={{ color: '#fcb816' }}>الفرص الاستثمارية   </a>
                                 </div>
 
                             </div>
@@ -56,50 +60,47 @@ export default function researchrequest(props) {
                     </div>
                 </div>
             </section>
-            <section class="category_invest  margin-t-8">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
-              <div class="title_sections_inner" id="partner1">
-                                {/* <h2>{t.partner1}</h2> */}
-                                <h1> إبدا رحلتك 
-                                </h1>
-                            </div>
-               
-              
-             <a href='/research_request_close_area' target='_blank'> 
-                <div class="item">
-                    <br />
-                  <div class="content">
-                <i class="tio iphone"></i>
-                    <h3>تقديم طلب</h3>
-                    <p>تقديم الطلب مع المستندات المطلوبة</p>
-                  </div>
-                </div>
-                </a>
-                <div class="item">
-                <br />
-                  <div class="content">
-                <i class="tio search"></i>
-                    <h3>الانتفاع بأرض / <br/> مساحة مغلقة  </h3>
-                    <p>تحال الى الفريق المختص للدراسة المشروع وأخذ الموافقات  اللازمة</p>
-                  </div>
-                </div>
-                <div class="item">
-                 <br />
-                  <div class="content">
-                <i class="tio thumbs_up"></i>
-                    <h3>توقيع الاتفاقية</h3>
-                    <p>انضم وانطلق في رحلتك مع مجمع الابتكار - مسقط</p>
-                  </div>
-                </div>
-              </div>
-            
+         <section className="team_overlay_style team_default_style margin-b-6">
+      <div className="container">
+        <div className="row justify-content-center text-center">
+          <div className="col-lg-5">
+            <div className="title_sections_inner margin-b-5 margin-t-10">
+                     <h2 className="text-center mb-5" style={{ color: '#851f83', fontWeight: '500', fontSize: '2.5rem' }}>
+ الفرص الاستثمارية </h2>
             </div>
-            <br />
-            <br />
           </div>
-        </section>
+        </div>
+        <div className="row">
+          {teamMembers.map((member, index) => (
+            <div className="col-md-6 col-lg-4" key={index}>
+              <div className="item_group">
+                <div className="image_ps">
+                  <img
+                    src={member.img}
+                    alt={member.name}
+                    width={300}
+                    height={300}
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                  <div className={`content_txt ${member.side}-side`}>
+                    <h3 style={{ color: '#851f83',fontWeight:'bold'}}>{member.name}</h3>
+                    <p>{member.title}</p>
+                  </div>
+                </div>
+                {/* <div className="social_text">
+                  {member.social.map((network, idx) => (
+                    <a href="#" key={idx}>
+                      {network}
+                    </a>
+                  ))}
+                </div> */}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
         </>
     );
