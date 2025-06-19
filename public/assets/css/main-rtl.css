@@ -1576,7 +1576,7 @@ img {
 }
 
 .c-gold {
-  color: #ffce53 !important;
+  color: #fcb816 !important;
 }
 
 .c-green {
@@ -1612,7 +1612,7 @@ img {
 }
 
 .c-beiget {
-  color: #ffe7aa !important;
+  color: #fcb816 !important;
 }
 
 .c-skuy {
@@ -1704,7 +1704,7 @@ img {
 }
 
 .bg-beiget {
-  background-color: #ffe7aa !important;
+  background-color: #fcb816 !important;
 }
 
 .bg-skuy {
@@ -2638,40 +2638,40 @@ img {
 }
 
 .active-beiget .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
-  color: #ffe7aa !important;
+  color: #fcb816 !important;
 }
 .active-beiget .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.selected {
-  color: #ffe7aa !important;
+  color: #fcb816 !important;
 }
 .active-beiget .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  color: #ffe7aa !important;
+  color: #fcb816 !important;
 }
 .active-beiget .navbar .navbar-collapse .navbar-nav .nav-item .dropdown_menu_nav .item_colume .nav_meun .dropdown-item:hover {
-  color: #ffe7aa !important;
+  color: #fcb816 !important;
 }
 .active-beiget .navbar .navbar-collapse .navbar-nav .nav-item .dropdown_menu_nav .item_colume .nav_meun .dropdown-item.active {
-  background-color: #ffe7aa !important;
+  background-color: #fcb816 !important;
   color: #ffffff !important;
 }
 .active-beiget .navbar .navbar-collapse .navbar-nav .nav-item .dropdown_menu_nav .dropdown-submenu .dropdown-item:hover {
-  color: #ffe7aa !important;
+  color: #fcb816 !important;
 }
 .active-beiget .navbar .navbar-collapse .navbar-nav .nav-item .dropdown_menu_nav .dropdown-submenu .dropdown-item.active {
-  background-color: #ffe7aa !important;
+  background-color: #fcb816 !important;
   color: #ffffff !important;
 }
 .active-beiget .navbar .navbar-collapse .navbar-nav .nav-item .dropdown_menu_nav .dropdown-submenu .dropdown-menu .dropdown-item:hover {
-  color: #ffe7aa !important;
+  color: #fcb816 !important;
 }
 .active-beiget .navbar .navbar-collapse .navbar-nav .nav-item .dropdown_menu_nav .dropdown-submenu .dropdown-menu .dropdown-item.active {
-  background-color: #ffe7aa !important;
+  background-color: #fcb816 !important;
   color: #ffffff !important;
 }
 .active-beiget .navbar .navbar-collapse .navbar-nav .nav-item.show .nav-link {
-  color: #ffe7aa !important;
+  color: #fcb816 !important;
 }
 .active-beiget .navbar .navbar-collapse .navbar-nav .nav-item.show .nav-link:hover {
-  color: #ffe7aa !important;
+  color: #fcb816 !important;
 }
 
 .active-sky .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
@@ -3316,7 +3316,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   color: #ffffff;
 }
 .header-nav-left.light .nav-pills .nav-item .nav-link.active {
-  color: #ffe7aa;
+  color: #fcb816;
 }
 
 /*-----------------------------
@@ -3792,7 +3792,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   pointer-events: none;
 }
 .demo_2.banner_section .banner_title h1 {
-  color: #ffe7aa;
+  color: #fcb816;
 }
 .demo_2.banner_section .banner_title p {
   color: #9da6af;
@@ -4082,7 +4082,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   banner_demo7
 -----------------------------*/
 .banner_demo7 {
-  background: #ffe7aa !important;
+  background: #fcb816 !important;
   border-radius: 12px !important;
   margin-top: 5.625rem;
   padding-top: 0 !important;
@@ -6196,7 +6196,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   serv_app
 -----------------------------*/
 .serv_app .amo_pic {
-  background-color: #ffe7aa;
+  background-color: #fcb816;
   border-radius: 50px;
   position: relative;
   overflow: hidden;
@@ -6232,7 +6232,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   align-items: center;
 }
 .serv_app .app_smartphone .btn--app .icon .tio {
-  color: #6f5fa6;
+  color: #851f83;
 }
 
 /*-----------------------------
@@ -6418,7 +6418,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   }
 }
 .service__about .body__tab .nav-pills .nav-link.active {
-  color: #0b2238;
+  color: #851f83;
 }
 .service__about .body__tab .block_video .cover_video {
   position: relative;
@@ -7115,7 +7115,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   width: 470px;
   height: 470px;
   border-radius: 50%;
-  background-color: #ffe7aa;
+  background-color: #fcb816;
   display: block;
   position: absolute;
   left: -10%;
@@ -9757,7 +9757,7 @@ software_web
   width: 13px;
   height: 15px;
   border-radius: 4px;
-  background-color: #ffe7aa;
+  background-color: #fcb816;
   display: inline-block;
   position: absolute;
   left: -5px;
@@ -15610,7 +15610,7 @@ software_web
   height: 300px;
   border-radius: 12px;
   border: 2px solid #f7f8fa;
-  background-color: #001638;
+  background-color: #0b2238;
   display: inline-grid;
   /* padding: 20px; */
   text-align: center;
@@ -15643,7 +15643,15 @@ software_web
   -ms-transition: 0.3s !important;
   transition: 0.3s !important;
 }
-
+.category_invest .item .content h5 {
+    color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 5px;
+  -webkit-transition: 0.3s !important;
+  -moz-transition: 0.3s !important;
+  -o-transition: 0.3s !important;
+  -ms-transition: 0.3s !important;
+  transition: 0.3s !important;
+}
 .category_invest .item .content p {
   font-size: 15px;
   font-weight: 400;
@@ -15657,6 +15665,15 @@ software_web
 }
 .category_invest .item:hover {
   background-color: #ffffff;
+}
+.category_invest .item:hover  .content h3{
+  color: #001638;
+}
+.category_invest .item:hover  .content p{
+  color: #001638;
+}
+.category_invest .item:hover  .tio{
+  color: #001638;
 }
 @media (max-width: 767px) {
   .category_films {

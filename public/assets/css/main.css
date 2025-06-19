@@ -243,11 +243,18 @@ img {
   font-weight: 600;
   color: #0b2238;
 }
+
 .title_sections p {
   color: #6c7a87;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1.25rem;
+}
+.title_sections .newh1 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: #851f83;
 }
 @media (max-width: 991px) {
   .title_sections {
@@ -1483,7 +1490,7 @@ img {
 }
 
 .c-gold {
-  color: #ffce53 !important;
+  color: #fcb816 !important;
 }
 
 .c-green {
@@ -6135,7 +6142,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   align-items: center;
 }
 .serv_app .app_smartphone .btn--app .icon .tio {
-  color: #6f5fa6;
+  color: #851f83;
 }
 
 /*-----------------------------
@@ -6321,7 +6328,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   }
 }
 .service__about .body__tab .nav-pills .nav-link.active {
-  color: #0b2238;
+  color: #851f83;
 }
 .service__about .body__tab .block_video .cover_video {
   position: relative;
@@ -9654,7 +9661,7 @@ software_web
   width: 13px;
   height: 15px;
   border-radius: 4px;
-  background-color: #ffe7aa;
+  background-color: #fcb816;
   display: inline-block;
   position: absolute;
   left: -5px;
